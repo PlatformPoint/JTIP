@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<TFS>
+    <TestRun integrate="true"/>
+    <Collection url="https://platformproducts.visualstudio.com" name=""/>
+    <Project name="Demo"/>
+    <TestLog dir="\target\surefire-reports" filter="TEST-testcases.TfsTest.xml"/>
+<TestMappings>
+
+     <TestMapping>
+            <TestPlan testPlanID="6"/>
+            <TestCase id="14" automatedTest="logtestngTFSResults_test_003"/>
+            <TestCase id="15" automatedTest="logtestngTFSResults_test_004"/>
+        </TestMapping>
+
+
+    </TestMappings>
+</TFS>
