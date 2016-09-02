@@ -13,7 +13,7 @@
             <dependency>
                 <groupId>com.platformpoint.library</groupId>
                 <artifactId>JTIP</artifactId>
-                <version>1.0-SNAPSHOT</version>
+                <version>1.0</version>
                 <scope>system</scope>
                 <systemPath>${basedir}/src/main/resources/libs/pkg/JTIP-1.0.jar</systemPath>
             </dependency>
