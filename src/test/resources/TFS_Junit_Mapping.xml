@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<TFS>
+    <!--set to true if you need to push results to TFS /VSTS -->
+    <TestRun integrate="true? />
+
+<!--TFS /VSTS Collection URL -->
+    <Collection url="https://platformproducts.visualstudio.com" name=""/>
+
+    <!--TFS /VSTS Project name -->
+    <Project name="Demo"/>
+    <!--Automated Test Log Directory -->
+    <TestLog dir="\target\surefire-reports" filter="TEST-testcases.TfsTest.xml"/>
+
+
+    <TestMappings>
+        <TestMapping>
+            <!--TFS /VSTS Test Plan ID -->
+            <TestPlan testPlanID="4"/>
+            <!--TFS /VSTS Test case id  : set automatedTest to the junit automated test having @Test attribute-->
+            <TestCase id="12" automatedTest="logjunitTFSResults_test_001"/>
+            <TestCase id="13" automatedTest="logjunitTFSResults_test_002"/>
+        </TestMapping>
+
+        <!--<TestMapping>
+
+            <TestPlan testPlanID="33"/>
+            <TestCase id="37" automatedTest="logtestngTFSResults_test_003"/>
+            <TestCase id="38" automatedTest="logtestngTFSResults_test_004"/>
+        </TestMapping>  -->
+
+        <!--<TestMapping>
+            <TestPlan testPlanID="35"/>
+            <TestCase id="39" automatedTest="logcocumberTFSResults_test_004"/>
+            <TestCase id="40" automatedTest="logcocumberTFSResults_test_005"/>
+        </TestMapping>-->
+    </TestMappings>
+</TFS>
